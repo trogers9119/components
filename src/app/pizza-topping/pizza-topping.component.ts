@@ -11,6 +11,7 @@ export class PizzaToppingComponent implements OnInit {
   constructor(public pizzaSvc: PizzaService) { }
 
   ngOnInit(): void {
+    const pizzatopping
   }
 
 }
