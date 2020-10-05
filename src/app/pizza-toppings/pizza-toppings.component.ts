@@ -8,12 +8,13 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 })
 export class PizzaToppingsComponent implements OnInit {
 
-  // DI MAgic ! ! !
+  // DI Magic ! ! !
   constructor(public pizzaSvc: PizzaService) { }
 
   ngOnInit(): void {
-    const pizzaToppings = this.pizzaSvc.loadPizzaToppings();
-    console.log(pizzaToppings);
+    this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
   }
+
+  pizzaToppings: PizzaToppingDisplay[] = [];
 
 }
