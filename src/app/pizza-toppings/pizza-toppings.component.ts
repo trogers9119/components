@@ -17,4 +17,15 @@ export class PizzaToppingsComponent implements OnInit {
 
   pizzaToppings: PizzaToppingDisplay[] = [];
 
+  total = 0;
+  //in class nod need for function keyword
+  public calculateTotal() {
+    this.total = this.pizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
+        , 0
+      );
+  }
+
 }

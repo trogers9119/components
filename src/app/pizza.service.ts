@@ -18,8 +18,8 @@ export class PizzaService {
     
     //Faux up some data that would really come from dominoes pizza web service/api
     const pizzaToppingsFromWebService = [
-      { name: 'Pepperoni', price: 1.5 },
-      { name: 'Olives', price: 2 }
+      { name: 'Pepperoni', price: 1.50 },
+      { name: 'Olives', price: 2.00 }
     ];
     
     return pizzaToppingsFromWebService.map(x => ({
