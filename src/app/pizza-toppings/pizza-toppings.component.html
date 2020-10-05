@@ -4,9 +4,21 @@
         *ngFor='let topping of pizzaToppings'
     >
         <label>
-            <input type="checkbox">
+            <input 
+            type="checkbox"
+            [(ngModel)]='topping.checked'
+            >
             {{ topping.name }} ({{ topping.price | currency }})
         </label>
 
     </p>
+    <button
+        (click)='calculateTotal()'
+    >
+        Calculate Total
+    </button>
+
+    <h3>
+        Total: {{ total | currency }}
+    </h3>
 </div>
