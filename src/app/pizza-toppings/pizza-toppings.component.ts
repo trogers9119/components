@@ -4,9 +4,12 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
+  //template: <h1>No Way</h1>
   styleUrls: ['./pizza-toppings.component.css']
 })
 export class PizzaToppingsComponent implements OnInit {
+
+  // DI Magic ! ! !
 
   constructor(public pizzaSvc: PizzaService) { }
 
