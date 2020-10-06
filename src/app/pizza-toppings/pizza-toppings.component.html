@@ -1,0 +1,24 @@
+<div>
+    <h3>Available Pizza Toppings</h3>
+    <p
+        *ngFor='let topping of pizzaToppings'
+    >
+        <label>
+            <input 
+                type="checkbox" 
+                [(ngModel)]='topping.checked'
+            >
+            {{ topping. name }} ({{ topping.price | currency }})
+        </label>
+    </p>
+
+    <button
+        (click)='calculateTotal()'
+    >
+        Calculate Total
+    </button>
+
+    <h3>
+        Total: {{ total | currency }}
+    </h3>
+</div>
