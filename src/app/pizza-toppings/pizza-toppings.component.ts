@@ -4,13 +4,15 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
-  // templateUrl: '<h1>test</h1>',
+  //template: '<h1>No way</h1>',
   styleUrls: ['./pizza-toppings.component.css']
 })
 export class PizzaToppingsComponent implements OnInit {
 
-  // DI Magic ! ! !
-  constructor(public pizzaSvc: PizzaService) { }
+  //
+  // DI no longer magic...
+  //
+  constructor(public pizzaSvc: PizzaService) {}
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
