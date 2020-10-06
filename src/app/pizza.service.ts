@@ -14,7 +14,7 @@ export class PizzaService {
   //pizzaService() {} in Java ???
   constructor() { }
 
-public loadPizzaToppings(): pizzaToppingDisplay[] {
+public loadPizzaToppings(): PizzaToppingDisplay[] {
   
   //Faux up some data would really come from
   //Dominoes Pizza web service / API ...
