@@ -10,11 +10,9 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 export class PizzaToppingsComponent implements OnInit {
 
   // DI no longer magic
-  //TS automatic property
-  //constructor(public pizzaSvc: PizzaService){}
-  constructor(pizzaSvc: PizzaService) {
-  this.pizzaSvc = pizzaSvc;
-}
+
+  constructor(public pizzaSvc: PizzaService){}
+
   public pizzaSvc: PizzaService;
 
   ngOnInit(): void {
