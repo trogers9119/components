@@ -14,5 +14,10 @@ export class PizzaToppingsComponent implements OnInit {
     this.pizzaToppings = this.pizzaSvc.loadPizzaTopings();
   }
   pizzaToppings: PizzaToppingDisplay[] = [];
-
+  total = 0;
+  public calculateTotal(){
+    this.total = this.pizzaToppings
+        .filter(x => x.checked)
+        .reduce((acc, x) => acc + x.price,0)
+  };
 }

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 export interface PizzaToppingDisplay {
   name: string;
   price: number;
-  chacked: boolean;
+  checked: boolean;
 }
 
 @Injectable({
