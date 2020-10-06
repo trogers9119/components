@@ -4,6 +4,7 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
+  // templateUrl: '<h1>test</h1>',
   styleUrls: ['./pizza-toppings.component.css']
 })
 export class PizzaToppingsComponent implements OnInit {
