@@ -3,20 +3,37 @@
         Available Pizza Toppings
     </mat-card-title>
     <mat-card-content>
+        <button
+            mat-mini-fab
+            color='accent'
+            (click)='checkAll()'
+        >
+            All
+        </button>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color='basic'
+            (click)='uncheckAll()'
+        >
+            None
+        </button>
         <p
             *ngFor='let topping of pizzaToppings'
         >
             <label>
-                <input 
-                    type="checkbox" 
+                <mat-checkbox
                     [(ngModel)]='topping.checked'
                 >
                 {{ topping. name }} ({{ topping.price | currency }})
+                </mat-checkbox>
             </label>
         </p>
 
         <button
             (click)='calculateTotal()'
+            mat-raised-button
+            color='primary'
         >
             Calculate Total
         </button>
