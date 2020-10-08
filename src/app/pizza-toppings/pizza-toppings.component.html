@@ -3,9 +3,24 @@
         Avaliable Pizza Toppings
     </mat-card-title>
     <mat-card-content>
-            <p
-            *ngFor='let topping of pizzaToppings'
-            >
+        <button
+            mat-mini-fab
+            color='accent'
+            (click)='checkAll()'
+        >
+            All
+        </button>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color='basic'
+            (click)='uncheckAll()'
+        >
+            None
+        </button>
+        <p
+        *ngFor='let topping of pizzaToppings'
+        >
             <label>
                 <mat-checkbox
                     [(ngModel)]='topping.checked'
