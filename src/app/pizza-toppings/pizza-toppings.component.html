@@ -7,16 +7,18 @@
             *ngFor='let topping of pizzaToppings'
         >
             <label>
-                <input 
-                    type="checkbox" 
+                <mat-checkbox
                     [(ngModel)]='topping.checked'
                 >
-                {{ topping. name }} ({{ topping.price | currency }})
+                    {{ topping. name }} ({{ topping.price | currency }})
+                </mat-checkbox>
             </label>
         </p>
 
         <button
             (click)='calculateTotal()'
+            mat-raised-button
+            color='primary'
         >
             Calculate Total
         </button>
