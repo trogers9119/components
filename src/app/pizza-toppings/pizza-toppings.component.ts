@@ -22,7 +22,7 @@ export class PizzaToppingsComponent implements OnInit {
 
   //total = 0;
   // A 'read only''getter' TS property.
-  public get Total() {
+  public get total() {
       //console.log('here');
 
      return this.pizzaToppings
@@ -41,7 +41,7 @@ export class PizzaToppingsComponent implements OnInit {
   uncheckAll = () => {
     this.pizzaToppings = this.pizzaToppings.map(x => ({
       ...x
-      , checked: true
+      , checked: false
     }) );
   }
 }
