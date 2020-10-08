@@ -20,16 +20,24 @@ export class PizzaToppingsComponent implements OnInit {
 
   pizzaToppings: PizzaToppingDisplay[] = [];
 
-  total = 0;
+  //total = 0;
 
-  public calculateTotal() {
+  public get total() {
       //console.log('here');
 
-      this.total = this.pizzaToppings
+      return this.pizzaToppings
         .filter(x => x.checked)
         .reduce(
           (acc, x) => acc + x.price
           , 0
         );
+  }
+
+  checkAll = () => {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: true}));
+  }
+
+  uncheckAll = () => {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: false}));
   }
 }
