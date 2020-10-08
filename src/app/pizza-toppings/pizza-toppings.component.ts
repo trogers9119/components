@@ -32,4 +32,19 @@ export class PizzaToppingsComponent implements OnInit {
           , 0
         );
   }
+
+  checkAll = () => {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({
+      ...x
+      , checked: true
+    }));
+  }
+
+  uncheckAll = () => {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({
+      ...x
+      , checked: false
+    }));
+  }
+
 }
