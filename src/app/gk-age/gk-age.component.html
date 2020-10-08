@@ -1,1 +1,16 @@
-<p>gk-age works!</p>
+<mat-card>
+    <mat-card-title>
+        Find your age
+    </mat-card-title>
+      <mat-card-content>
+
+      <div class="input-field col m2">
+          <input type="date" [(ngModel)]="birthdate" id="txtdate">
+          &nbsp;&nbsp;
+          <button mat-raised-button color='accent'
+           (click)="CalculateAge()">Calculate Age</button>
+          &nbsp;&nbsp;
+          <input type="number" [(ngModel)]="age" id="age">
+      </div>
+      </mat-card-content>
+</mat-card>
