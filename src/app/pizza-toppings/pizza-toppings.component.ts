@@ -20,12 +20,13 @@ export class PizzaToppingsComponent implements OnInit {
 
   pizzaToppings: PizzaToppingDisplay[] = [];
 
-  total = 0;
+  // total = 0;
 
-  public calculateTotal() {
+  // A "read only" getter TS property
+  public get total() {  //this is getting a property not declaring/defining a method
       //console.log('here');
 
-      this.total = this.pizzaToppings
+      return this.pizzaToppings
         .filter(x => x.checked)
         .reduce(
           (acc, x) => acc + x.price
