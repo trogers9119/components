@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
