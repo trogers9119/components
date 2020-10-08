@@ -11,8 +11,15 @@ export class PizzaToppingsComponent implements OnInit {
 
   //
   // DI no longer magic ! ! !
-  //
-  constructor(public pizzaSvc: PizzaService) {}
+  //TS automatic property...
+  //constructor(foo: PizzaService)
+
+  
+  constructor(foo: PizzaService) {
+    this.pizzaSvc = foo;
+  }
+
+  public pizzaSvc: PizzaService;
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
