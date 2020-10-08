@@ -10,7 +10,7 @@ import { PizzaService, PizzaToppingDisplay } from '../pizza.service';
 export class PizzaToppingsComponent implements OnInit {
 
   //
-  // DI no longer magic...
+  // DI no longer magic ! ! !
   //
   constructor(public pizzaSvc: PizzaService) {}
 
