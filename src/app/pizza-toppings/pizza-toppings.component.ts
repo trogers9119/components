@@ -24,12 +24,10 @@ export class PizzaToppingsComponent implements OnInit {
 
   pizzaToppings: PizzaToppingDisplay[] = [];
 
-  total = 0;
+  // total = 0;
 
-  public calculateTotal() {
-      //console.log('here');
-
-      this.total = this.pizzaToppings
+  public get total() {
+      return this.pizzaToppings
         .filter(x => x.checked)
         .reduce(
           (acc, x) => acc + x.price
