@@ -11,12 +11,15 @@ export class PizzaToppingsComponent implements OnInit {
 
   //DI Magic ! ! !     pizzaSvc is the dependency of type PizzaService
 
+  //adding public in front on pizzaSvc will make it a property of the class
   constructor(public pizzaSvc: PizzaService) { }
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
   }
 
+  //create new property pizzaToppings annotating it (type of) to a PizzaToppingDisplay[]
+    //and initializing it to an empty []
   pizzaToppings: PizzaToppingDisplay[] = [];
 
   total = 0;
