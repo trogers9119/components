@@ -11,18 +11,7 @@ export class PizzaToppingsComponent implements OnInit {
 
   //DI Magic ! ! !     pizzaSvc is the dependency of type PizzaService
 
-  //For each new PizzaToppingsComponent you need to pass it a pizzaSvc,
-
-  //PizzaToppingsComponent depends on pizzaSvc
-
-  //TS automatic property
-  //constructor(public pizzaSvc: PizzaService) { }
-
-  constructor (foo: PizzaService) {
-    this.pizzaSvc = foo;
-  }
-
-  public pizzaSvc: PizzaService;
+  constructor(public pizzaSvc: PizzaService) { }
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
