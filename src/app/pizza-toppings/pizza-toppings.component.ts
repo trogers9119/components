@@ -14,7 +14,15 @@ export class PizzaToppingsComponent implements OnInit {
   //For each new PizzaToppingsComponent you need to pass it a pizzaSvc,
 
   //PizzaToppingsComponent depends on pizzaSvc
-  constructor(public pizzaSvc: PizzaService) { }
+
+  //TS automatic property
+  //constructor(public pizzaSvc: PizzaService) { }
+
+  constructor (foo: PizzaService) {
+    this.pizzaSvc = foo;
+  }
+
+  public pizzaSvc: PizzaService;
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
