@@ -20,12 +20,12 @@ export class PizzaToppingsComponent implements OnInit {
 
   pizzaToppings: PizzaToppingDisplay[] = [];
 
-  total = 0;
-
-  public calculateTotal() {
+  //total = 0;
+  // A 'read only''getter' TS property.
+  public get Total() {
       //console.log('here');
 
-      this.total = this.pizzaToppings
+     return this.pizzaToppings
         .filter(x => x.checked)
         .reduce(
           (acc, x) => acc + x.price
@@ -41,7 +41,7 @@ export class PizzaToppingsComponent implements OnInit {
   uncheckAll = () => {
     this.pizzaToppings = this.pizzaToppings.map(x => ({
       ...x
-      , checked: false
+      , checked: true
     }) );
   }
 }
