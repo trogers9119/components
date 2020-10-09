@@ -1,0 +1,15 @@
+<h2>Want to subscribe to our deals?</h2>
+
+<div *ngIf="emailbox.show">
+
+<label for="">Enter your email address</label>
+<br />
+    <input type="text"
+            id="inputBox"
+            [(ngModel)] = "email.name"
+            />
+    <button (click)='getEmail()'>Send Me Deals</button>
+</div>
+
+    <div *ngIf="email.showWords">
+        <p>Sounds great, we will send promotions to {{ email.name }}</p> </div>
