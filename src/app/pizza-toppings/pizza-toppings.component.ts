@@ -33,4 +33,19 @@ export class PizzaToppingsComponent implements OnInit {
       );
   }
 
+  checkAll = () => {
+    //iterate over all pizza toppings and transform them with map
+    this.pizzaToppings = this.pizzaToppings.map(x => ({
+      ...x, //spread in the pizza toppings their name, price, current check value
+      checked: true
+    }));
+  }
+
+  uncheckAll = () => {
+        //iterate over all pizza toppings and transform them with map
+        this.pizzaToppings = this.pizzaToppings.map(x => ({
+          ...x,
+          checked: false
+        }));
+  }
 }
