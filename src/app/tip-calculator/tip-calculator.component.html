@@ -1,17 +1,24 @@
 <div 
     class="tipCalculator"
 >
-    <input 
-        matInput 
-        placeholder="Order Total"
-        [(ngModel)]="total"
-    >
-    *
-    <input 
-        matInput 
-        placeholder="10%, 15%, 20%"
-        [(ngModel)]="tipPercentage"
-    >
+    <mat-form-field class="example-full-width orderTotal">
+        <mat-label>Order Total</mat-label>
+        <input 
+            matInput
+            [(ngModel)]="total"
+        >
+      </mat-form-field>
+
+      *
+
+      <mat-form-field class="example-full-width tipPercent">
+        <mat-label>Tip Percentage</mat-label>
+        <input
+            placeholder="10%, 15%, 20%" 
+            matInput
+            [(ngModel)]="tipPercentage"
+        >
+      </mat-form-field>
 
     <br>
 
