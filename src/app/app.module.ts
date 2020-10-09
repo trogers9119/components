@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 import { TipCalculatorComponent } from './tip-calculator/tip-calculator.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TipCalculatorComponent } from './tip-calculator/tip-calculator.componen
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

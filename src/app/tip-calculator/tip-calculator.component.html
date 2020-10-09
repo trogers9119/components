@@ -1,1 +1,19 @@
 <p>tip-calculator works!</p>
+
+<div>
+    <input matInput placeholder="Order Total"
+        [(ngModel)]="total"
+    >
+    *
+    <input matInput placeholder="10%, 15%, 20%"
+        [(ngModel)]="tipPercentage"
+    >
+
+    <button
+        (click)='calculateTip()'
+    >
+        Calculate Tip
+    </button>
+
+    {{ TipAmount }}
+</div>
