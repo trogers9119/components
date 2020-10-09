@@ -22,10 +22,13 @@ export class PizzaToppingsComponent implements OnInit {
     //and initializing it to an empty []
   pizzaToppings: PizzaToppingDisplay[] = [];
 
-  total = 0;
-  //in class nod need for function keyword
-  public calculateTotal() {
-    this.total = this.pizzaToppings
+  //total = 0;
+
+  //read only getter TS property, not an method
+
+  //getter property can run code when something needs to access it
+  public get total() {
+    return this.pizzaToppings
       .filter(x => x.checked)
       .reduce(
         (acc, x) => acc + x.price
