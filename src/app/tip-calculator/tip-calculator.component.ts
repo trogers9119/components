@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipCalculatorComponent implements OnInit {
 
+  total;
+  tipPercentage;
+  tipAmount;
+
+  calculateTip = () => {
+    this.tipAmount = this.total * this.tipPercentage;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
