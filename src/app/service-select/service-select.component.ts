@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-select.component.css']
 })
 export class ServiceSelectComponent implements OnInit {
+  selected = 'Delivery';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
