@@ -12,4 +12,14 @@ export class MultiplicationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne: number = 0;
+  numberTwo: number = 0;
+
+  public get total() {
+    return this.numberOne * this.numberTwo;
+  }
+
+  
+  
+  
 }

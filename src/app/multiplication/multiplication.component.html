@@ -1,1 +1,13 @@
-<p>multiplication works!</p>
+<mat-card>
+    <mat-card-title>
+        Multiplication
+    </mat-card-title>
+    <mat-card-content>
+        <input type="text" matInput placeholder="Enter a number" [(ngModel)]=numberOne>
+        <p>X</p>
+        <input type="text" matInput placeholder="Enter a number" [(ngModel)]=numberTwo>
+        <p>
+            = {{ total }}
+        </p>
+    </mat-card-content>
+</mat-card>
