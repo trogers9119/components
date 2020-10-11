@@ -3,11 +3,18 @@
         Multiplication
     </mat-card-title>
     <mat-card-content>
-        <input type="text" matInput placeholder="Enter a number" [(ngModel)]=numberOne>
-        <p>X</p>
-        <input type="text" matInput placeholder="Enter a number" [(ngModel)]=numberTwo>
-        <p>
-            = {{ total }}
-        </p>
+        <mat-form-field>
+            <mat-label>Number One</mat-label>
+            <input matInput [(ngModel)]=numberOne>
+        </mat-form-field>
+        &nbsp;&nbsp;*&nbsp;&nbsp;
+        <mat-form-field>
+            <mat-label>Number Two</mat-label>
+            <input type="text" matInput [(ngModel)]=numberTwo>
+        </mat-form-field>
+        <mat-card-subtitle>
+            Total = {{ total }}
+        </mat-card-subtitle>
+        
     </mat-card-content>
 </mat-card>
