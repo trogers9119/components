@@ -23,7 +23,6 @@ export class PizzaToppingsComponent implements OnInit {
   //total = 0;
 
   public get total() {
-      //console.log('here');
 
       return this.pizzaToppings
         .filter(x => x.checked)
@@ -34,10 +33,17 @@ export class PizzaToppingsComponent implements OnInit {
   }
 
   checkAll = () => {
-    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: true}));
+    this.pizzaToppings = this.pizzaToppings.map(x => ({
+      ...x
+      , checked: true
+    }));
   }
 
   uncheckAll = () => {
-    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: false}));
+    this.pizzaToppings = this.pizzaToppings.map(x => ({
+      ...x
+      , checked: false
+    }));
   }
+
 }
