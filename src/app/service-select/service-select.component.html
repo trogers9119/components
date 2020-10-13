@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="Delivery">Delivery</mat-option>
+      <mat-option value="Curbside Pickup">Curbside Pickup</mat-option>
+      <mat-option value="Outdoor Dining">Outdoor Dining</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <p><strong>You selected: {{selected}}</strong></p>
+</mat-card>
