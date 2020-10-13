@@ -16,6 +16,7 @@ import { TimeComponent } from './time/time.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
+import { SpecialRequestComponent } from './special-request/special-request.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
     TipCalculatorComponent,
     TimeComponent,
     ServiceSelectComponent,
-    TjsSubtractionComponent
+    TjsSubtractionComponent,
+    SpecialRequestComponent
   ],
   imports: [
     BrowserModule
