@@ -14,12 +14,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 
 
+import { MatInputModule } from '@angular/material/input';
+import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     ServiceSelectComponent
+    TjsSubtractionComponent
   ],
   imports: [
     BrowserModule
@@ -29,6 +32,7 @@ import { MatSelectModule } from '@angular/material/select';
     , MatCheckboxModule
     , MatButtonModule
     , MatSelectModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
