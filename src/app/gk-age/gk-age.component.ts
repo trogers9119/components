@@ -15,8 +15,8 @@ export class GkAgeComponent implements OnInit {
   }
   public CalculateAge(): void
      {
-         if(this.birthdate){
-            var timeDiff = Math.abs(Date.now() - new Date(this.birthdate).getTime());
+         if(this.selectedAge){
+            var timeDiff = Math.abs(Date.now() - new Date(this.selectedAge).getTime());
             //Used Math.floor instead of Math.ceil
             //so 26 years and 140 days would be considered as 26, not 27.
             this.age = Math.floor((timeDiff / (1000 * 3600 * 24))/365);
