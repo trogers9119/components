@@ -12,11 +12,11 @@ export class SpecialRequestComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+public foo = "";
   getspecialRequest = () => {
 
+    
 
-document.write("Your Request has been added successfully!!!!");
 
   }
 }
