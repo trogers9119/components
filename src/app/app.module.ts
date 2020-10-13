@@ -17,6 +17,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
 import { SpecialRequestComponent } from './special-request/special-request.component';
+import { GkAgeComponent } from './gk-age/gk-age.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SpecialRequestComponent } from './special-request/special-request.compo
     TimeComponent,
     ServiceSelectComponent,
     TjsSubtractionComponent,
-    SpecialRequestComponent
+    SpecialRequestComponent,
+    GkAgeComponent
   ],
   imports: [
     BrowserModule
