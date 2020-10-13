@@ -21,7 +21,7 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    ServiceSelectComponent
+    ServiceSelectComponent,
     TjsSubtractionComponent
   ],
   imports: [
