@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { TipCalculatorComponent } from './tip-calculator/tip-calculator.component';
 import { TimeComponent } from './time/time.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
@@ -20,6 +21,7 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TipCalculatorComponent,
     TimeComponent,
     ServiceSelectComponent,
     TjsSubtractionComponent

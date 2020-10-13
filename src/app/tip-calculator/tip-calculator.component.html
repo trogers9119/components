@@ -1,0 +1,35 @@
+<mat-card 
+    class="tipCalculator"
+>
+    <mat-form-field class="example-full-width orderTotal">
+        <mat-label>Order Total</mat-label>
+        <input 
+            matInput
+            [(ngModel)]="total"
+        >
+      </mat-form-field>
+
+      *
+
+      <mat-form-field class="example-full-width tipPercent">
+        <mat-label>Tip Percentage</mat-label>
+        <input
+            placeholder="10%, 15%, 20%" 
+            matInput
+            [(ngModel)]="tipPercentage"
+        >
+      </mat-form-field>
+
+    <br>
+
+    <button
+        (click)='calculateTip()'
+        mat-raised-button 
+        color="primary"
+        class="tipButton"
+    >
+        Calculate Tip
+    </button>
+
+    {{ tipAmount | currency }}
+</mat-card>
