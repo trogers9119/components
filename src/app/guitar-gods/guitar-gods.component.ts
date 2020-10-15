@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GuitarGodsComponent implements OnInit {
 
   firstName;
-  displayGod = 'white';
+  displayGod = 'empty';
 
   createDecider = () => {
     let theDecider = this.firstName.substring(0,1);
@@ -30,16 +30,17 @@ export class GuitarGodsComponent implements OnInit {
 
     switch (true) {
       case (resultOne):
-        this.displayGod = 'red';
+        console.log(letter);
+        this.displayGod = 'stevieRayVaughn';
         break;
       case (resultTwo): 
-        this.displayGod = 'orange';
+        this.displayGod = 'jimiHendrix';
         break;
       case (resultThree): 
-        this.displayGod = 'yellow';
+        this.displayGod = 'nancyWilson';
         break;
       case (resultFour): 
-        this.displayGod = 'green';
+        this.displayGod = 'jimmyPage';
     } 
   }
 
