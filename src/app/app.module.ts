@@ -11,10 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { TipCalculatorComponent } from './tip-calculator/tip-calculator.component';
 import { TimeComponent } from './time/time.component';
 import { MatSelectModule } from '@angular/material/select';
-import { MatInputModule } from '@angular/material/input';
 import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
 import { SpecialRequestComponent } from './special-request/special-request.component';
 import { GkAgeComponent } from './gk-age/gk-age.component';
@@ -23,6 +24,7 @@ import { GkAgeComponent } from './gk-age/gk-age.component';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    MultiplicationComponent,
     TipCalculatorComponent,
     TimeComponent,
     ServiceSelectComponent,
