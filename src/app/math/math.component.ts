@@ -11,5 +11,13 @@ export class MathComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  numberOne = 20;
+  numberTwo = 3;
+  numberThree = 1;
+  answer = 24;
+
+  subtractNumbers = () => {
+    this.answer = this.numberOne + this.numberTwo + this.numberThree;
+  }
 
 }

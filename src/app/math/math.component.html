@@ -1,7 +1,43 @@
-<div>
-  <input type="number" [{ngModel}]='numberOne'>
-  -
-  <input type="number" [{ngModel}]='numberTwo'>
-  <button (click)='substractNumbers()'>=</button>
-  {{answer}}
-</div>
+<mat-card>
+    <mat-card-title>
+        Addition
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+            <input
+                matInput
+                placeholder="Number 1"
+                type='number'
+                [(ngModel)]='numberOne'
+            />
+        </mat-form-field>
+        &nbsp; + &nbsp;
+        <mat-form-field class="example-full-width">
+            <input
+                matInput
+                placeholder="Number 2"
+                type='number'
+                [(ngModel)]='numberTwo'
+            />
+              </mat-form-field>
+            &nbsp; + &nbsp;
+            <mat-form-field class="example-full-width">
+                <input
+                    matInput
+                    placeholder="Number 3"
+                    type='number'
+                    [(ngModel)]='numberThree'
+                />
+        </mat-form-field>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color='accent'
+            (click)='subtractNumbers()'
+        >
+            =
+        </button>
+        &nbsp;
+        {{ answer }}
+</mat-card-content>
+</mat-card>
