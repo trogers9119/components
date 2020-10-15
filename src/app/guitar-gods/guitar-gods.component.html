@@ -2,14 +2,12 @@
   <mat-card-title>
     <h2>Which Guitar God are You?</h2>
   </mat-card-title>
-  <mat-form-field>
-  <mat-label>
+  <label>
     Enter first name:
     <input type="text" 
            [(ngModel)]='firstName' 
            (keyup.enter)="createGod()">
-  </mat-label>
- </mat-form-field>
+  </label>
   &nbsp;
   <button (click)='createGod()'
           mat-raised-button

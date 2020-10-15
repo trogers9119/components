@@ -9,7 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { GuitarGodsComponent } from './guitar-gods/guitar-gods.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     , MatCheckboxModule
     , MatButtonModule
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
