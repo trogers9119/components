@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-title>
-        Tom's Subtraction Component
+        Albert's Subtraction Component
     </mat-card-title>
     <mat-card-content>
         <mat-form-field class="example-full-width">
@@ -10,6 +10,8 @@
                 type='number'
                 [(ngModel)]='numberOne'
             />
+           
+
         </mat-form-field>
         &nbsp; - &nbsp;
         <mat-form-field class="example-full-width">
@@ -19,6 +21,8 @@
                 type='number'
                 [(ngModel)]='numberTwo'
             />
+           
+
         </mat-form-field>
         &nbsp;
         <button
@@ -28,7 +32,22 @@
         >
             =
         </button>
+        
         &nbsp;
+       
         {{ answer }}
 </mat-card-content>
 </mat-card>
+
+
+<!-- <div>
+    <h3>Albert Subtraction Component</h3>
+    <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; -&nbsp;
+
+    <input type="number" [(ngModel)]='numberTwo'>
+    &nbsp;
+
+    <button>=</button>
+    {{ answer }}
+</div> -->

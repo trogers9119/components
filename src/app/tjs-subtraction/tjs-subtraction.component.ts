@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TjsSubtractionComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  
   numberOne = 10;
   numberTwo = 5;
   answer = 5;
 
   subtractNumbers = () => {
     this.answer = this.numberOne - this.numberTwo;
+  }
+  constructor() { }
+
+  ngOnInit(): void {
   }
 }
