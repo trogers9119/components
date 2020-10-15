@@ -12,7 +12,8 @@ export class GuitarGodsComponent implements OnInit {
 
   createDecider = () => {
     let theDecider = this.firstName.substring(0,1);
-    return theDecider;
+    let loweredDecider = theDecider.toLowerCase();
+    return loweredDecider;
   }
 
   createGod = () => {
@@ -29,7 +30,6 @@ export class GuitarGodsComponent implements OnInit {
 
     switch (true) {
       case (resultOne):
-        console.log(letter);
         this.displayGod = 'red';
         break;
       case (resultTwo): 
