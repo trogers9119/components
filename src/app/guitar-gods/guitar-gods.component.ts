@@ -10,45 +10,37 @@ export class GuitarGodsComponent implements OnInit {
   firstName;
   displayGod = 'white';
 
-  createGod = () => {
+  createDecider = () => {
     let theDecider = this.firstName.substring(0,1);
-    let patternOne = /[aeimquy]/gi;
-    let patternTwo = /[bfjnrvz]/gi;
-    let patternThree = /[cgkosw]/gi;
-    let patternFour = /[dhlptx]/gi;
-    let resultOne = theDecider.match(patternOne).toString();
-    let resultTwo = theDecider.match(patternOne).toString();
-    let resultThree = theDecider.match(patternOne).toString();
-    let resultFour = theDecider.match(patternOne).toString();
-    console.log(resultOne);
-    console.log(resultTwo);
-    console.log(resultThree);
-    console.log(resultFour);
+    return theDecider;
+  }
 
-    switch (theDecider) {
-      case resultOne:
+  createGod = () => {
+    
+    let letter = this.createDecider();
+    let lettersOne = ['a','e','i','m','q','u','y'];
+    let lettersTwo = ['b','f','j','n','r','v','z'];
+    let lettersThree = ['c','g','k','o','s','w'];
+    let lettersFour = ['d','h','l','p','t','x'];
+    let resultOne = lettersOne.includes(letter);
+    let resultTwo = lettersTwo.includes(letter);
+    let resultThree = lettersThree.includes(letter);
+    let resultFour = lettersFour.includes(letter);
+
+    switch (true) {
+      case (resultOne):
+        console.log(letter);
         this.displayGod = 'red';
         break;
-      case 'b': 
+      case (resultTwo): 
         this.displayGod = 'orange';
         break;
-      case 'c': 
+      case (resultThree): 
         this.displayGod = 'yellow';
         break;
-      case 'd': 
+      case (resultFour): 
         this.displayGod = 'green';
-        break;
-      case 'e':
-        this.displayGod = 'blue';
-        break;
-      case 'f':
-        this.displayGod = 'indigo';
-        break;
-      case 'g': 
-        this.displayGod = 'violet';
     } 
-    console.log(theDecider);
-    console.log(this.firstName.substring(0,1))
   }
 
   constructor() {}
