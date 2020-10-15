@@ -4,7 +4,9 @@
   </mat-card-title>
   <label>
     <p>Enter first name:</p>
-    <input type="text" [(ngModel)]='firstName'>
+    <input type="text" 
+           [(ngModel)]='firstName' 
+           (keyup.enter)="createGod()">
   </label>
   &nbsp;
   <button (click)='createGod()'
