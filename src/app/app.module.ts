@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { GuitarGodsComponent } from './guitar-gods/guitar-gods.component';
 import { MatInputModule } from '@angular/material/input';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { TipCalculatorComponent } from './tip-calculator/tip-calculator.component';
@@ -24,6 +25,7 @@ import { GkAgeComponent } from './gk-age/gk-age.component';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    GuitarGodsComponent,
     MultiplicationComponent,
     TipCalculatorComponent,
     TimeComponent,
