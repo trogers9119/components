@@ -22,7 +22,8 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    TjsSubtractComponent
+    TjsSubtractComponent,
+    TjsSubtractionComponent
   ],
   imports: [
     BrowserModule
