@@ -12,18 +12,30 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { TjsSubtractComponent } from './tjs-subtract/tjs-subtract.component';
-import { MatSelectModule } from '@angular/material/select';
-
-
+import { GuitarGodsComponent } from './guitar-gods/guitar-gods.component';
 import { MatInputModule } from '@angular/material/input';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { TipCalculatorComponent } from './tip-calculator/tip-calculator.component';
+import { TimeComponent } from './time/time.component';
+import { MatSelectModule } from '@angular/material/select';
 import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.component';
+import { SpecialRequestComponent } from './special-request/special-request.component';
+import { GkAgeComponent } from './gk-age/gk-age.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     TjsSubtractComponent,
-    TjsSubtractionComponent
+    TjsSubtractionComponent,
+    GuitarGodsComponent,
+    MultiplicationComponent,
+    TipCalculatorComponent,
+    TimeComponent,
+    ServiceSelectComponent,
+    TjsSubtractionComponent,
+    SpecialRequestComponent,
+    GkAgeComponent
   ],
   imports: [
     BrowserModule

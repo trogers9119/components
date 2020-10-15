@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-title>
+    <h2>Which Guitar God are You?</h2>
+  </mat-card-title>
+  <label>
+    Enter first name:
+    <input type="text" 
+           [(ngModel)]='firstName' 
+           (keyup.enter)="createGod()">
+  </label>
+  &nbsp;
+  <button (click)='createGod()'
+          mat-raised-button
+          color='primary'
+  >
+    Become a God!
+  </button><br><br>
+  <div [ngSwitch]="displayGod">
+    <div *ngSwitchCase="'empty'">
+    </div>
+    <div *ngSwitchCase="'stevieRayVaughn'">
+      <img src="assets/guitar-gods-images/stevieRayVaughn.png">
+      <h2>You are Stevie Ray Vaughn... You are a God!!!</h2>
+    </div>
+    <div *ngSwitchCase="'jimiHendrix'">
+      <img src="assets/guitar-gods-images/jimiHendrix.png">
+      <h2>You are Jimi Hendrix... You are a God!!!</h2>
+    </div>
+    <div *ngSwitchCase="'nancyWilson'">
+      <img src="assets/guitar-gods-images/nancyWilson.png">
+      <h2>You are Nancy Wilson... You are a God!!!</h2>
+    </div>
+    <div *ngSwitchCase="'jimmyPage'">
+      <img src="assets/guitar-gods-images/jimmyPage.png">
+      <h2>You are Jimmy Page... You are a God!!!</h2>
+    </div>
+  </div>
+</mat-card>
+
