@@ -1,0 +1,16 @@
+.tipCalculator {
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.tipButton {
+    margin-top: 1em;
+}
+
+.orderTotal {
+    margin-right: 1em;
+}
+
+.tipPercent {
+    margin-left: 1em;
+}
