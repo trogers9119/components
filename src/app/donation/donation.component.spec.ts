@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DonationComponent } from './donation.component';
+import { TjsSubtractionComponent } from './tjs-subtraction.component';
 
-describe('DonationComponent', () => {
-  let component: DonationComponent;
-  let fixture: ComponentFixture<DonationComponent>;
+describe('TjsSubtractionComponent', () => {
+  let component: TjsSubtractionComponent;
+  let fixture: ComponentFixture<TjsSubtractionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DonationComponent ]
+      declarations: [ TjsSubtractionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DonationComponent);
+    fixture = TestBed.createComponent(TjsSubtractionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

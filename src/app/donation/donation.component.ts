@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./donation.component.css']
 })
 export class DonationComponent implements OnInit {
+  numberOne = 0;
+  numberTwo = 0;
+  answer = 0;
+  divideNumbers = () => {
+    this.answer = this.numberOne / this.numberTwo;
+
+  }
 
   constructor() { }
 
