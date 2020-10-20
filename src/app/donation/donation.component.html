@@ -1,0 +1,19 @@
+<mat-card>
+<div>
+    <mat-card-title >Division</mat-card-title>
+    <!-- <h3>Albert's Substraction Component</h3> -->
+    <mat-card-content>
+        <input type="number" [(ngModel)]='numberOne'>
+        &nbsp; / &nbsp;
+        <input type="number" [(ngModel)]='numberTwo'>
+        &nbsp;
+        <button
+        mat-mini-fab
+        color='success'
+        (click)='divideNumbers()'>=</button>
+        &nbsp;
+        {{answer}}
+    </mat-card-content>
+
+</div>
+</mat-card>
