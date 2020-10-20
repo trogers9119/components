@@ -22,6 +22,7 @@ import { TjsSubtractionComponent } from './tjs-subtraction/tjs-subtraction.compo
 import { SpecialRequestComponent } from './special-request/special-request.component';
 import { GkAgeComponent } from './gk-age/gk-age.component';
 import { DonationComponent } from './donation/donation.component';
+import { MathComponent } from './math/math.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DonationComponent } from './donation/donation.component';
     TjsSubtractionComponent,
     SpecialRequestComponent,
     GkAgeComponent,
-    DonationComponent
+    DonationComponent,
+    MathComponent
   ],
   imports: [
     BrowserModule
