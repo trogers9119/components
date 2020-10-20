@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>
+        Multiplication
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Number One</mat-label>
+            <input matInput [(ngModel)]=numberOne>
+        </mat-form-field>
+        &nbsp;&nbsp;*&nbsp;&nbsp;
+        <mat-form-field>
+            <mat-label>Number Two</mat-label>
+            <input type="text" matInput [(ngModel)]=numberTwo>
+        </mat-form-field>
+        <h4>
+            Total = {{ total }}
+        </h4>
+        
+    </mat-card-content>
+</mat-card>

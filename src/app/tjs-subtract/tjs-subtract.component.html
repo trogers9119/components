@@ -1,0 +1,25 @@
+<mat-card>
+<div>
+    <mat-card-title >Albert's Substraction Component</mat-card-title>
+    <!-- <h3>Albert's Substraction Component</h3> -->
+    <mat-card-content>
+        <input type="number" [(ngModel)]='numberOne'>
+        &nbsp; - &nbsp;
+        <input type="number" [(ngModel)]='numberTwo'>
+        &nbsp;
+        <button
+        mat-mini-fab
+        color='accent'
+        (click)='subtractNumbers()'>=</button>
+        &nbsp;
+        {{answer}}
+    </mat-card-content>
+    <!-- <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; - &nbsp;
+    <input type="number" [(ngModel)]='numberTwo'>
+    &nbsp;
+    <button (click)='subtractNumbers()'>=</button>
+    &nbsp;
+    {{answer}} -->
+</div>
+</mat-card>
