@@ -29,3 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Editing in browser is dangerous...
+```
+Made another change via editing in the browser...
+
+This change is so that I have something to merge/PR into my forked version
+```
